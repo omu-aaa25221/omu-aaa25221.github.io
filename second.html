@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -15,7 +16,12 @@
         <h4>一万円札</h4>
          <img src="money_10000_shibusawa.png" width="200"　alt="一万円札">
         <br><a href="index.html">トップページへ</a></br>
-    </div>
+   <h2>BMI指標計算</h2>
+<form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+    <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+    <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+    <p><label>BMI：<output name="bmi"></output></label></p>
+</form> 
    
 </body>
 </html>
